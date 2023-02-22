@@ -1,0 +1,32 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/myMenu"
+        android:icon="@drawable/ic_baseline_restaurant_menu_24"
+        android:enabled="true"
+        android:title="MyMenu"
+    />
+
+
+    <item
+        android:id="@+id/createFood"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:enabled="true"
+        android:title="MakeMeal"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/requests"
+        android:icon="@drawable/ic_baseline_request_page_24"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:title="Requests"/>
+
+
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true"
+        app:showAsAction="always"
+        android:title="MyProfile"/>
+</menu>

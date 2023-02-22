@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_one"
+    tools:context=".ui.cook.CookRecipeView">
+
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_width="174dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage2" />
+
+    <TextView
+        android:id="@+id/recipePrice"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toEndOf="@+id/recipeCuisineType"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage2" />
+
+    <TextView
+        android:id="@+id/recipeCuisineType"
+        android:layout_width="170dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="4dp"
+        android:text="Cuisine Type"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage2" />
+
+    <ImageView
+        android:id="@+id/foodImage2"
+        android:layout_width="405dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/recipeDescription"
+        android:layout_width="405dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="64dp"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodImage2" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btm_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="@drawable/nav_layout"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cookIsOffered"
+        android:layout_width="151dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDescription" />
+
+    <Button
+        android:id="@+id/submitRecipeOffered"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:text="SUBMIT"
+        app:layout_constraintStart_toEndOf="@+id/cookIsOffered"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
